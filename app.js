@@ -23,7 +23,7 @@ const showImages = (images) => {
     let div = document.createElement('div');
     div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2';
     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">
-    <a href="${image.largeImageURL}" target="_blank" ><button type="button"> view full image </button></a>`;
+    <a href="${image.largeImageURL}" target="_blank" ><button class="btn btn-primary w-100" type="button"> view full image </button></a>`;
     gallery.appendChild(div)
   })
 
